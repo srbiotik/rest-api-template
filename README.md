@@ -12,7 +12,7 @@
 - Clone the repository
 - Cd the repository directory
 - run command `touch .env`, in this env file you need to configure several env variables
-	* COMIC_CLAN_PORT 	- the port on which the service should listen
+	* PORT 	- the port on which the service should listen
 	* SECRET_KEY      	- used to encrypt a part of the JWT token
 	* TOKEN_EXIPIRES_IN - expiriation time of token default is two hours
 	* WHITELIST         - a list of domains not succeptable to CORS, in the form of: www.somedomain.com,www.someother.com
@@ -21,7 +21,7 @@
 	* EMAIL_USER 	    - user of smtp server
 	* EMAIL_PASSWORD    - password for smtp server
 - run command `docker-compose up -d` to start the service and `docker-compose down -d` to stop it
-- once running you can check the endpoint documentation at 'http://localhost:${COMIC_CLAN_PORT}/docs'
+- once running you can check the endpoint documentation at 'http://localhost:${PORT}/docs'
 
 ### Tests
 
