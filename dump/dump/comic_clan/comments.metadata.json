@@ -1,0 +1,1 @@
+{"options":{},"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_","ns":"comic_clan_test.comments"}],"uuid":"97d17cf8060348b5910d09d007cc1928"}

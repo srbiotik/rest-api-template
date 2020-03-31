@@ -1,0 +1,54 @@
+{
+  "name": "comic-clan",
+  "version": "1.0.0",
+  "description": "A backend service REST API supporting comic clan website and mobile application.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --testTimeout=10000",
+    "start": "nodemon --exec babel-node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/vett.io-react-candidates/milos-grujic-node.js/comicclan-node.js-api.git"
+  },
+  "keywords": [
+    "REST",
+    "API"
+  ],
+  "author": "Milos Grujic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/vett.io-react-candidates/milos-grujic-node.js/comicclan-node.js-api/issues"
+  },
+  "homepage": "https://gitlab.com/vett.io-react-candidates/milos-grujic-node.js/comicclan-node.js-api#readme",
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.8.7",
+    "bcrypt": "^4.0.1",
+    "blakejs": "^1.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jose": "^1.25.0",
+    "mongoose": "^5.9.6",
+    "multer": "^1.4.2",
+    "nodemailer": "^6.4.6",
+    "nodemon": "^2.0.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/node": "^7.8.7",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-transform-runtime": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "@babel/register": "^7.9.0",
+    "eslint": "^6.8.0",
+    "jest": "^25.2.4",
+    "supertest": "^4.0.2"
+  }
+}

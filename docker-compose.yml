@@ -1,0 +1,26 @@
+version: "3.3"
+services:
+  # Storage services
+  store:
+    image: "mongo:latest"
+    ports:
+      - "27017:27017"
+    volumes:
+      - /home/raa/code/data/db:/data/db
+
+  comic_clan:
+    container_name: comic_clan
+
+    build: ./
+
+    env_file: ".env"
+
+    environment:
+    - SKIP_AUTH=/register,/authenticate,/docs
+    - MONGO=mongodb://store:27017/comic_clan
+
+    links:
+      - store
+
+    ports:
+      - "${COMIC_CLAN_PORT}:5000"
