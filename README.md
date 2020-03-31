@@ -1,4 +1,4 @@
-# ComicClan - Node.js API Specification
+# RESTful API - Node.js Template
 
 #### Dependencies
 
